@@ -27,6 +27,6 @@ def turn(board)
   until valid_move?(board, pos)
     pos = input_to_index(gets.strip)
   end
-  move(board, pos)
+  move(board, pos, "X")
   display_board(board)
 end
