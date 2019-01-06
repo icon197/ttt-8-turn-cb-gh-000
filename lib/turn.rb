@@ -23,7 +23,9 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  pos = gets.strip.to_i - 1
-  if board[pos] == "X" || board[pos] == "O"
-    
+  pos = input_to_index(gets.strip)
+  until valid_move?(board, pos)
+    pos = input_to_index(gets.strip)
+  end
+
 end
