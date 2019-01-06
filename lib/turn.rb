@@ -28,4 +28,5 @@ def turn(board)
     pos = input_to_index(gets.strip)
   end
   move(board, pos)
+  display_board(board)
 end
